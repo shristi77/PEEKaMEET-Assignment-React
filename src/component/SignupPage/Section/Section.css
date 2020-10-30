@@ -1,0 +1,46 @@
+.Section {
+    width: 1080px;
+    height: 588px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 30px 143px;
+    box-sizing: border-box;
+    display:flex;
+  }
+  .para1 {
+    width: 431px;
+    height: 55px;
+    font-family: DMSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #152d4e;
+  }
+  
+  .para1 .text-style-1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .peekameet{
+    font-family: DMSans;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  .para2{
+    width: 431px;
+    height: 24px;
+    font-family: DMSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--dark-slate-blue);
+  
+  }
