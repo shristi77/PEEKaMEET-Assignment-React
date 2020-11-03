@@ -1,5 +1,12 @@
 .Footer {
-  width: 1366px;
-  height: 64px;
+  width:100%;
   background-color: #f4f7f8;
+}
+.signupFooter{
+  height: 64px;
+}
+
+.userProfileFooter{
+  /* height: 242px; */
+  height:100%;
 }

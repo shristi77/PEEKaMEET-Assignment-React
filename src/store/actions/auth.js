@@ -20,6 +20,7 @@ export const authFail = (error) => {
     };
 };
 
+
 export const auth = (email, password) => {
     return dispatch => {
         dispatch(authStart());
@@ -30,12 +31,33 @@ export const auth = (email, password) => {
         let url = 'https://apipeekameet.cloudzmall.com/peekameet/api/v1/public/user/login';
         axios.post(url, authData)
             .then(response => {
-                console.log(response);
+                // dataFactory(response);
+                const apiResponse = response.data.data[0].customer || {};
+                console.log(apiResponse);
+                localStorage.setItem('tagline', apiResponse.tagline);
+                console.log(apiResponse.tagline);
+                localStorage.setItem('firstName', apiResponse.firstName);
+                localStorage.setItem('lastName', apiResponse.lastName);
+                localStorage.setItem('jobTitle', apiResponse.jobTitle);
+                localStorage.setItem('company', apiResponse.company);
+                console.log("@@" + apiResponse.company);
+                localStorage.setItem('languages', apiResponse.languages[0]);
+                localStorage.setItem('industry', apiResponse.industry[0]);
+                localStorage.setItem('orgaisations&groups', apiResponse.organisationGroups[0]);
+                localStorage.setItem('interest&activities', apiResponse.interestActivities[0]);
+                localStorage.setItem('alumni', apiResponse.alumni[0]);
+                console.log(apiResponse.alumni[0]);
+                localStorage.setItem('email', apiResponse.email);
+                localStorage.setItem('website', apiResponse.website);
+                localStorage.setItem('businessPhone', apiResponse.businessPhone);
+                localStorage.setItem('businessAddress', apiResponse.businessAddress);
+                localStorage.setItem('profileImage', apiResponse.profileImage.url);  
                 dispatch(authSuccess());
             })
             .catch(err => {
-                dispatch(authFail(err.response.data.error));
+                dispatch(authFail(err));
             });
     };
 };
+
 

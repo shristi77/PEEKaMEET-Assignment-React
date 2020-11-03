@@ -1,6 +1,4 @@
 .Button {
-    width: 87px;
-    height: 30px;
     border-radius: 4px;
     background-color: #14b349;
     cursor: pointer;
@@ -13,4 +11,30 @@
 .active , .Button:hover{
     background-color: white;
     color: #14b349;
+}
+
+.Big{
+  width: 431px;
+  height: 36px;
+  margin-top: 16px;
+}
+
+.Small{
+  width: 87px;
+  height: 30px;
+}
+.userProfile{
+  width: 135px;
+  height: 30px;
+  border-radius: 4px;
+  background-image: linear-gradient(to bottom, rgb(20, 179, 73), rgb(9, 160, 79));
+  top: 271px;
+  position : absolute;
+  border-style: none;
+}
+.userProfile1{
+  left: 17px;
+}
+.userProfile2{
+  left: 168px;
 }

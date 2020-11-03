@@ -3,16 +3,21 @@ import React, { useState } from 'react';
 import Input from '../../../UI/Input/Input';
 import Button from '../../../UI/Button/Button';
 import * as actions from '../../../../store/actions/index';
-import {connect} from 'react-redux';
+import {connect } from 'react-redux';
+import classes from './SignupSection.css';
+import { useHistory } from "react-router-dom";
 
 const SignupSection = (props) => {
     const [email , setEmail] = useState('');
     const [password , setPassword] = useState('');
+    const history = useHistory();
 
     const submitHandler = (event) => {
         event.preventDefault();
         console.log(email +"  "+ password);
         props.onAuth( email, password);
+        // return <Redirect to="/userProfile" />
+        history.push("/userProfile");
     }
 
     let errorMessage = null;
@@ -36,8 +41,15 @@ const SignupSection = (props) => {
                             inputValue={password}
                             changed={(event)=> setPassword(event.target.value)}>
                         </Input>
-                        {/* {email}-{password} */}
-                        <Button>Sign In</Button>
+                        <Button btnType="Big">Sign In</Button>
+                        <div className={classes.div}>
+                            <input type="checkbox" className={classes.checkbox}/>
+                            <label className={classes.remember}>Remember Me</label>
+                            <a href="/" className={classes.forgot}>Forgot Password</a>
+                        </div>
+                        <div className={classes.div2}>
+                            Don’t have an account? <a href="/">Sign Up</a>
+                        </div>
                     </form>
         </div>
     )

@@ -1,3 +1,3 @@
 export {
     auth
-} from '../reducers/auth';
+} from '../actions/auth';

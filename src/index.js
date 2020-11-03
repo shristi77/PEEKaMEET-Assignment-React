@@ -4,6 +4,7 @@ import App from './App';
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 
 import authReducer from './store/reducers/auth';
 
@@ -22,6 +23,8 @@ const store = createStore(rootReducer, composeEnhancers(
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </Provider>, 
-    document.getElementById('root'));
+document.getElementById('root'));

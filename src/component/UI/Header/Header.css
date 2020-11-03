@@ -1,4 +1,4 @@
-.Header{
+.SignupHeader{
     width: 1366px;
     height: 56px;
 }
@@ -7,16 +7,6 @@
     margin: 13px 143px 13px 800px;
     display: inline;
 }
-
-.logo {
-    width: 40px;
-    height: 40px;
-    background-color: #152d4e;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 143px;
-    display: inline;
-  }
 
   .peekameet {
     margin: 16px 0px 16px 0px ;
@@ -30,4 +20,37 @@
     line-height: normal;
     letter-spacing: -0.4px;
     color: #ffffff;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #152d4e;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 143px;
+    display: inline;
+    /* color: red; */
+  }
+
+  .userprofileHeader{
+    height: 48px;
+    width: 100%;
+    background-image: linear-gradient(100deg, #14b349 -99%, #09a04f 199%);
+
+  }
+
+  .myProfile{
+    /* font-size: 30px; */
+    /* font-weight: bold; */
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    top:28px;
+    left: 850px;
+    position:absolute;
+    /* margin-bottom : 8px; */
+    /* margin: 18px 8px 16px 8px;   */
+    /* vertical-align: middle; */
   }
