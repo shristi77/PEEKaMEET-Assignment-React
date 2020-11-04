@@ -1,40 +1,46 @@
 .Button {
-    border-radius: 4px;
-    background-color: #14b349;
-    cursor: pointer;
-    font: inherit;
-    font-weight: bold;
-    border-style: none;
-    color: white;
-  }
-
-.active , .Button:hover{
-    background-color: white;
-    color: #14b349;
+  border-radius: 4px;
+  background-color: #14b349;
+  cursor: pointer;
+  font: inherit;
+  font-weight: bold;
+  border-style: none;
+  color: white;
+  border-radius: 4px;
 }
+/* 
+.active,
+.Button:hover {
+  background-color: white;
+  color: #14b349;
+} */
 
-.Big{
+.Big {
   width: 431px;
   height: 36px;
   margin-top: 16px;
+  border-radius: 4px;
 }
-
-.Small{
+.Small {
   width: 87px;
   height: 30px;
 }
-.userProfile{
+.userProfile {
   width: 135px;
   height: 30px;
   border-radius: 4px;
-  background-image: linear-gradient(to bottom, rgb(20, 179, 73), rgb(9, 160, 79));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(20, 179, 73),
+    rgb(9, 160, 79)
+  );
   top: 271px;
-  position : absolute;
+  position: absolute;
   border-style: none;
 }
-.userProfile1{
+.userProfile1 {
   left: 17px;
 }
-.userProfile2{
+.userProfile2 {
   left: 168px;
 }

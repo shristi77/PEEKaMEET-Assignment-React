@@ -11,13 +11,12 @@ const Profile = (props) => {
     localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
   const jobTitle = localStorage.getItem("jobTitle");
   const company = localStorage.getItem("company");
-  console.log(props.props);
-  //   const businessAddress = localStorage.getItem("businessAddress");
-  // console.log(company);
   return (
     <div className={classes.Profile}>
-      <div className={classes.green}></div>
-      <div className={classes.profilepic}></div>
+      <div className={classes.disc}>
+        <div className={classes.green}></div>
+        <div className={classes.profilepic}></div>
+      </div>
       <div className={[classes.center, classes.name].join(" ")}>{name}</div>
       <div className={[classes.center, classes.jobTitle].join(" ")}>
         {jobTitle}

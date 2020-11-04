@@ -2,7 +2,11 @@
   background-color: white;
   /* border: solid 2px red; */
   height: 1178px;
-  position: relative;
+  /* position: relative; */
+}
+.disc {
+  display: flex;
+  flex-direction: column;
 }
 .green {
   height: 92px;
@@ -13,9 +17,9 @@
   width: 100px;
   height: 100px;
   border: 1px solid black;
-  top: 24px;
-  left: 110px;
-  position: absolute;
+  /* top: 24px; */
+  /* left: 110px; */
+  /* position: absolute; */
   /* display: flex;
   flex-flow: column;
   align-items: center; */
