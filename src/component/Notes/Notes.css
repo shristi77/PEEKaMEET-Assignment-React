@@ -1,0 +1,13 @@
+.nav {
+  position: absolute;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  top: 361px;
+  color: #14b349;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 22px;
+}

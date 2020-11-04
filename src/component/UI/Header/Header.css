@@ -1,56 +1,80 @@
-.SignupHeader{
-    width: 1366px;
-    height: 56px;
+.SignupHeader {
+  width: 1366px;
+  height: 56px;
+  background-image: linear-gradient(100deg, #14b349 -99%, #09a04f 199%);
 }
 
-.button{
-    margin: 13px 143px 13px 800px;
-    display: inline;
+.button {
+  margin: 13px 143px 13px 800px;
+  display: inline;
 }
 
-  .peekameet {
-    margin: 16px 0px 16px 0px ;
-    width: 104px;
-    height: 24px;
-    font-family: CircularStd;
-    font-size: 18.8px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.4px;
-    color: #ffffff;
-  }
+.peekameet {
+  margin: 16px 0px 16px 0px;
+  width: 104px;
+  height: 24px;
+  font-family: CircularStd;
+  font-size: 18.8px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #ffffff;
+}
 
-  .logo {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #152d4e;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    margin-left: 143px;
-    display: inline;
-    /* color: red; */
-  }
+.logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #152d4e;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 143px;
+  display: inline;
+  /* color: red; */
+}
 
-  .userprofileHeader{
-    height: 48px;
-    width: 100%;
-    background-image: linear-gradient(100deg, #14b349 -99%, #09a04f 199%);
+.userprofileHeader {
+  height: 48px;
+  width: 100%;
+  background-image: linear-gradient(100deg, #14b349 -99%, #09a04f 199%);
+}
 
-  }
-
-  .myProfile{
-    /* font-size: 30px; */
-    /* font-weight: bold; */
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    top:28px;
-    left: 850px;
-    position:absolute;
-    /* margin-bottom : 8px; */
-    /* margin: 18px 8px 16px 8px;   */
-    /* vertical-align: middle; */
-  }
+.myProfile {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  top: 28px;
+  left: 850px;
+  position: absolute;
+}
+/* .addNotesHeader {
+  height: 56px;
+  width: 100%;
+  margin: 0px;
+} */
+.SignupHeader li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  margin: 0px 10px 0px 10px;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  /* color: rgb(255, 255, 255); */
+  color: black;
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-flow: column wrap; */
+  /* flex-direction: column; */
+}
+.addNoteslogo {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+}

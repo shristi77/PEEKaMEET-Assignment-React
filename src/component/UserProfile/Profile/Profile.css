@@ -1,182 +1,181 @@
-.Profile{
-    background-color: white;
-    /* border: solid 2px red; */
-    height: 1178px;
-    position: relative;
-
+.Profile {
+  background-color: white;
+  /* border: solid 2px red; */
+  height: 1178px;
+  position: relative;
 }
-.green{
-    height: 92px;
-    background-image: linear-gradient(100deg, #14b349 -99%, #09a04f 199%);
-    /* border: solid 2px black; */
-
+.green {
+  height: 92px;
+  background-image: linear-gradient(100deg, #14b349 -99%, #09a04f 199%);
+  /* border: solid 2px black; */
 }
-.profilepic{
-    width: 100px;
-    height:100px;
-    border: 1px solid black;
-    top: 24px;
-    left: 110px;
-    position: absolute;
-    font-family: DMSans;
-    font-weight: bolder;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: rgba(72,61,139, 0.18);
-  
+.profilepic {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  top: 24px;
+  left: 110px;
+  position: absolute;
+  /* display: flex;
+  flex-flow: column;
+  align-items: center; */
+  font-family: DMSans;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgba(72, 61, 139, 0.18);
 }
 .center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
-.name{
-    top:140px;
-    font-size: 18px;
+.name {
+  top: 140px;
+  font-size: 18px;
 }
-.jobTitle{
-    top:168px;
-    font-size: 16px;
+.jobTitle {
+  top: 168px;
+  font-size: 16px;
 }
-.company{
-    top:200px;
-    font-size: 14px;
+.company {
+  top: 200px;
+  font-size: 14px;
 }
-.navLink{
-    top:325px;
-    position:absolute; 
+.navLink {
+  top: 325px;
+  position: absolute;
 }
-.nav1{
-    left: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
-    text-decoration: none;
-    font-family: DMSans;
-    font-weight: bolder;
-    font-size: 20px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: black;
+.nav1 {
+  left: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-family: DMSans;
+  font-weight: bolder;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
 }
-.nav2{
-    left: 40px;
-    margin-left: 10px;
-    margin-right: 20px;
-    text-decoration: none;
-    font-family: DMSans;
-    font-size: 20px;
-    font-weight: bolder;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: black;
+.nav2 {
+  left: 40px;
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-family: DMSans;
+  font-size: 20px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
 }
-.greentext{
-    color: #14b349;
-    font-size: 30px;
-    font-weight: bolder;
+.greentext {
+  color: #14b349;
+  font-size: 30px;
+  font-weight: bolder;
 }
-.greentext2{
-    color: #14b349;
-    font-size: 16px;
-    font-weight: bolder;
+.greentext2 {
+  color: #14b349;
+  font-size: 16px;
+  font-weight: bolder;
 }
-.tagline{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    font-size: 25px;
-    top:360px;
-    position: absolute;
+.tagline {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  top: 360px;
+  position: absolute;
 }
-.about{
-    top: 395px;
-    font-size: 14px;
-    left:16px;
-    right:16px;
-    text-align: justify;
+.about {
+  top: 395px;
+  font-size: 14px;
+  left: 16px;
+  right: 16px;
+  text-align: justify;
 }
-.headings{
-    font-family: DMSans;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: rgb(158, 160, 163);
+.headings {
+  font-family: DMSans;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(158, 160, 163);
 }
- .head1{
-    text-align: left;
-    position: absolute;
-    top:515px;
-    margin-left:16px;
-    /* margin-bottom:12px; */
+.head1 {
+  text-align: left;
+  position: absolute;
+  top: 515px;
+  margin-left: 16px;
+  /* margin-bottom:12px; */
 }
- .head2{
-    text-align: left;
-    position: absolute;
-    top:582px;
-    margin-left:16px;
+.head2 {
+  text-align: left;
+  position: absolute;
+  top: 582px;
+  margin-left: 16px;
 }
-.head3{
-    text-align: left;
-    position: absolute;
-    top:652px;
-    margin-left:16px;
+.head3 {
+  text-align: left;
+  position: absolute;
+  top: 652px;
+  margin-left: 16px;
 }
-.head4{
-    text-align: left;
-    position: absolute;
-    top:722px;
-    margin-left:16px;
+.head4 {
+  text-align: left;
+  position: absolute;
+  top: 722px;
+  margin-left: 16px;
 }
-.head5{
-    text-align: left;
-    position: absolute;
-    top:789px;
-    margin-left:16px;
-} 
-.info1{
-    top: 882px;
-    margin-left: 16px;
-    position: absolute;
+.head5 {
+  text-align: left;
+  position: absolute;
+  top: 789px;
+  margin-left: 16px;
 }
-.info2{
-    top: 921px;
-    margin-left: 16px;
-    position: absolute;
-    word-break: break-all;
-    margin-right: 16px;
+.info1 {
+  top: 882px;
+  margin-left: 16px;
+  position: absolute;
 }
-.info3{
-    top: 972px;
-    margin-left: 16px;
-    position: absolute;
+.info2 {
+  top: 921px;
+  margin-left: 16px;
+  position: absolute;
+  word-break: break-all;
+  margin-right: 16px;
 }
-.head6{
-    text-align: left;
-    position: absolute;
-    top:992px;
-    margin-left:16px; 
+.info3 {
+  top: 972px;
+  margin-left: 16px;
+  position: absolute;
 }
-.address{
-    font-family: DMSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  
+.head6 {
+  text-align: left;
+  position: absolute;
+  top: 992px;
+  margin-left: 16px;
+}
+.address {
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
