@@ -29,7 +29,7 @@ const Image = (props) => {
             image =>
                 <img 
                     src={image} 
-                    className={classes.footerImage} 
+        className={classes.footerImage} 
                     alt={image} 
                     key={image}
                 />      
