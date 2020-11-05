@@ -23,12 +23,6 @@ const AddNotes = (props) => {
   if (props.error) {
     errorMessage = <p>{props.error.message}</p>;
   }
-
-  const name =
-    localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
-  const jobTitle = localStorage.getItem("jobTitle");
-  const company = localStorage.getItem("company");
-
   return (
     <div className={classes.container}>
       <Header type="addNotes" />
@@ -83,16 +77,6 @@ const AddNotes = (props) => {
               </div>
             </form>
           </div>
-        </div>
-        <div className={classes.see}>
-          <div className={classes.details}>
-            <div className={classes.profilePic}></div>
-            <div className={classes.name}>{name}</div>
-            <div className={classes.jobTitle}>{jobTitle}</div>
-            <div className={classes.company}>{company}</div>
-            <button className={classes.share}>Share</button>
-          </div>
-          <div className={classes.calender}></div>
         </div>
       </div>
       <Footer type="signupFooter" />

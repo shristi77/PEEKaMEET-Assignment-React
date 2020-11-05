@@ -1,0 +1,31 @@
+.Note {
+  border: 1px solid black;
+  border-left: 5px solid #14b349;
+  border-radius: 12px;
+  top: 400px;
+  position: absolute;
+  margin-left: 5px;
+}
+.outerDiv {
+  display: flex;
+  width: 288px;
+  /* justify-content: space-around; */
+}
+.one {
+  margin: 10px;
+  word-break: normal;
+  box-sizing: border-box;
+  flex: 3;
+  text-align: justify;
+}
+.two {
+  padding: 8px;
+  flex: 1;
+  text-align: right;
+  box-sizing: border-box;
+  font-size: 30px;
+}
+.dateTime {
+  color: grey;
+  margin-left: 10px;
+}

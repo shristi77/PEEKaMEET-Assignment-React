@@ -34,9 +34,9 @@ export const auth = (email, password) => {
       .then((response) => {
         // dataFactory(response);
         const apiResponse = response.data.data[0].customer || {};
-        console.log(apiResponse);
+        // console.log(response.data.data[0].token);
         localStorage.setItem("id", apiResponse._id);
-        localStorage.setItem("token", apiResponse.token);
+        localStorage.setItem("token", response.data.data[0].token);
         localStorage.setItem("tagline", apiResponse.tagline);
         console.log(apiResponse.tagline);
         localStorage.setItem("firstName", apiResponse.firstName);

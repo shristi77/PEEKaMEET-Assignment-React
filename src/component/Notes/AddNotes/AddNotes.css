@@ -12,6 +12,7 @@
   width: 479px;
   height: 644px;
   border: 2px solid black;
+  margin: auto;
   /* display: inline; */
 }
 .details {

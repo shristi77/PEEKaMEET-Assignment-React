@@ -26,13 +26,20 @@ export const addNotes = (createdFor, text, dateTime) => {
     const authData = {
       createdFor: createdFor,
       type: "followup",
-      text: text,
-      timestamp: dateTime,
+      noteText: text,
+      dateTime: dateTime,
     };
+    
+    const token = localStorage.getItem('token');
+
     let url =
       "https://apipeekameet.cloudzmall.com/peekameet/api/v1/followUpNote";
     axios
-      .post(url, authData)
+      .post(url, authData, {
+        headers: {
+          "Authorization": `${token}`
+        },
+      })
       .then((response) => {
         console.log(response);
         console.log("Data Successfully added");
