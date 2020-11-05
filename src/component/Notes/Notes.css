@@ -11,3 +11,10 @@
   text-decoration: none;
   font-size: 22px;
 }
+.Note {
+  top: 400px;
+  position: absolute;
+  overflow: scroll;
+  height: 620px;
+  border: 1px solid red;
+}

@@ -8,12 +8,14 @@ import { BrowserRouter } from "react-router-dom";
 
 import authReducer from "./store/reducers/auth";
 import addNotesReducer from "./store/reducers/addNotes";
+import fetchNotesReducer from "./store/reducers/fetchNotes";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
   auth: authReducer,
   addNotes: addNotesReducer,
+  fetchNotes: fetchNotesReducer,
 });
 
 const store = createStore(
