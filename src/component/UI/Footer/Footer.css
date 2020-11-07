@@ -1,12 +1,27 @@
 .Footer {
-  width:100%;
-  background-color: #f4f7f8;
-}
-.signupFooter{
   height: 64px;
+  background-color: rgb(244, 247, 248);
+  display: flex;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--dark-slate-blue);
+  /* justify-content: space-around; */
+  padding: 24px 0px 24px 0px;
+  box-sizing: border-box;
 }
-
-.userProfileFooter{
-  /* height: 242px; */
-  height:100%;
+.logoText {
+  margin: 0px 99px 0px 30px;
+}
+.Img {
+  width: 30px;
+  height: 30px;
+  margin: -6px 8px -6px 8px;
+}
+.links {
+  margin: 0px 16px 0px 16px;
 }
