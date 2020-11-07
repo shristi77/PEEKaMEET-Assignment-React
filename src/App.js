@@ -17,7 +17,7 @@ class App extends Component {
           component={AddNotes}
         />
         <Route path="/userProfile/notes/add_notes" component={AddNotes} />
-        <Route path="/userProfile" component={UserProfile} />
+        <Route path="/userProfile/details" component={UserProfile} />
         <Route path="/signup" component={SignupPage} />
         <Redirect to="/signup" />
       </Switch>

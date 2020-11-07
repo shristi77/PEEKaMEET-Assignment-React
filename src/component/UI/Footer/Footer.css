@@ -25,3 +25,13 @@
 .links {
   margin: 0px 16px 0px 16px;
 }
+@media (min-width: 320px) {
+  .Footer {
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: center;
+  }
+  .logoText {
+    margin: 0px 99px 0px 100px;
+  }
+}
