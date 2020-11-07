@@ -12,6 +12,9 @@ const AddNotes = (props) => {
   let timeval = "";
   let textval = "";
 
+  const name =
+    localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
+
   if (
     props.match.path ===
     "/userProfile/notes/edit_notes/:id/:date/:time/:noteText"
@@ -24,14 +27,9 @@ const AddNotes = (props) => {
   const [date, setDate] = useState(dateval);
   const [time, setTime] = useState(timeval);
   const [text, setText] = useState(textval);
-  console.log("@@date", date);
-  console.log("@@time", time);
-  console.log("@@text", text);
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log("@@date", date);
-    console.log("@@time", time);
     const createdFor = localStorage.getItem("id");
     const timestamp = Date.parse(date + " " + time);
     if (
@@ -60,9 +58,12 @@ const AddNotes = (props) => {
       <div className={classes.wrapper}>
         <div className={classes.add}>
           <div className={classes.addHeader}>Add Note</div>
-          <div>
-            <span className={classes.logo}>....</span>Name
+
+          <div className={classes.info}>
+            <div className={classes.logo}></div>
+            <div className={classes.name}>{name}</div>
           </div>
+
           <div>
             {AdderrorMessage}
             {EditerrorMessage}
@@ -111,7 +112,7 @@ const AddNotes = (props) => {
           </div>
         </div>
       </div>
-      <Footer type="signupFooter" />
+      <Footer />
     </div>
   );
 };

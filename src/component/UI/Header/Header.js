@@ -44,30 +44,16 @@ const Header = (props) => {
   }
   if (props.type === "addNotes") {
     header = (
-      <nav className={classes.SignupHeader}>
-        <ul>
-          <li>
-            <span className={classes.addNoteslogo}></span>PEEKaMEET
-          </li>
-          <li>
-            <NavLink
-              to="/userProfile/notes/add_notes/home"
-              activeStyle={{
-                color: "rgb(255, 255, 255)",
-                fontSize: "20px",
-                textDecoration: "none",
-              }}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>Contacts</li>
-          <li>Message</li>
-          <li>Scan</li>
-          <li>The Movement</li>
-          <li>Notifications</li>
-          <li>|||</li>
-        </ul>
+      <nav className={classes.addHeader}>
+        <div className={classes.logo}></div>
+        <div className={classes.logoText}>PEEKaMEET</div>
+        <div className={classes.Home}>Home</div>
+        <div className={classes.common}>Contacts</div>
+        <div className={classes.common}>Message</div>
+        <div className={classes.common}>Scan</div>
+        <div className={classes.common}>The Movement</div>
+        <div className={classes.common}>Notifications</div>
+        <div className={classes.createImg}></div>
       </nav>
     );
   }

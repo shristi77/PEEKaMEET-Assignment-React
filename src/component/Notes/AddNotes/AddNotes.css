@@ -1,32 +1,24 @@
 .container {
   width: 1366px;
   height: 795px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(20, 179, 73),
+    rgb(9, 160, 79)
+  );
   margin: auto;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 .add {
   width: 479px;
   height: 644px;
   border: 2px solid black;
-  margin: auto;
-  /* display: inline; */
-}
-.details {
-  width: 370px;
-  height: 110px;
-  border: 2px solid black;
-  /* display: inline; */
-}
-
-.calender {
-  width: 370px;
-  height: 527px;
-  border: 2px solid black;
-  /* display: inline; */
+  margin: 15px auto 15px auto;
 }
 .addHeader {
   background-color: rgba(241, 236, 236, 0.794);
@@ -39,15 +31,24 @@
   font-weight: bolder;
   margin-bottom: 16px;
 }
+.info {
+  display: flex;
+}
+.name {
+  margin: 20px 0px 20px 0px;
+  padding-top: 3px;
+  font-size: 25px;
+}
 .logo {
+  background-color: orange;
   height: 40px;
   width: 40px;
-  background-color: black;
-  margin: 16px 8px 22px 17px;
+  border-radius: 50%;
+  margin: 16px 8px 16px 17px;
 }
 .headings {
   font-family: DMSans;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -55,17 +56,15 @@
   letter-spacing: normal;
   color: rgb(158, 160, 163);
   display: block;
-  margin-left: 16px;
-  margin-top: 15px;
+  margin: 15px 0px 0px 20px;
 }
-input,
-textarea {
+.add input,
+.add textarea {
   border-top: none;
   border-left: none;
   border-right: none;
   border-color: grey;
-  /* margin-left: 16px;
-  margin-top: 15px; */
+  margin: 15px 0px 0px 20px;
 }
 button {
   border: none;
@@ -73,7 +72,7 @@ button {
 .greenButton {
   width: 215px;
   height: 36px;
-  margin: 8px;
+  margin: 20px 0px 0px 15px;
   border-radius: 4px;
   font-size: 16px;
   background-image: linear-gradient(
@@ -86,7 +85,7 @@ button {
 .whiteButton {
   width: 215px;
   height: 36px;
-  margin: 8px;
+  margin: 20px 0px 0px 15px;
   border-radius: 4px;
   font-size: 16px;
   background-color: gray;
