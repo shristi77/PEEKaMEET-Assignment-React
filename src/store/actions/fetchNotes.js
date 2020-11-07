@@ -3,21 +3,21 @@ import * as actionTypes from "./actionTypes";
 
 export const fetchNotesStart = () => {
   return {
-    type: actionTypes.FETCHNOTES_START,
+    type: actionTypes.FETCH_NOTES_START,
   };
 };
 
 export const fetchNotesSuccess = (note) => {
   // console.log("---- ", note);
   return {
-    type: actionTypes.FETCHNOTES_SUCCESS,
+    type: actionTypes.FETCH_NOTES_SUCCESS,
     notes: note,
   };
 };
 
 export const fetchNotesFail = (error) => {
   return {
-    type: actionTypes.FETCHNOTES_FAIL,
+    type: actionTypes.FETCH_NOTES_FAIL,
     error: error,
   };
 };
@@ -37,6 +37,7 @@ export const fetchNotes = () => {
         params: {
           createdFor: `${createdFor}`,
           limit: "100",
+          // skip: "20",
           // skip: `${(skip - 1) * 10}`,
         },
       })

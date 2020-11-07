@@ -20,14 +20,18 @@ const Notes = (props) => {
   };
 
   const note = props.notes.slice(0, end).map((note) => (
-    <Note key={note.id} dateTime={note.dateTime}>
+    <Note
+      key={note.id}
+      dateTime={note.dateTime}
+      id={note._id}
+      noteText={note.noteText}
+    >
       {note.noteText}
     </Note>
   ));
 
   useEffect(() => {
     props.onfetchNotes();
-    // console.log(" @@Data :   ", props.notes, props);
   }, []);
 
   return (

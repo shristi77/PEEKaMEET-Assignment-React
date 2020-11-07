@@ -3,19 +3,19 @@ import * as actionTypes from "./actionTypes";
 
 export const addNotesStart = () => {
   return {
-    type: actionTypes.ADDNOTES_START,
+    type: actionTypes.ADD_NOTES_START,
   };
 };
 
 export const addNotesSuccess = () => {
   return {
-    type: actionTypes.ADDNOTES_SUCCESS,
+    type: actionTypes.ADD_NOTES_SUCCESS,
   };
 };
 
 export const addNotesFail = (error) => {
   return {
-    type: actionTypes.ADDNOTES_FAIL,
+    type: actionTypes.ADD_NOTES_FAIL,
     error: error,
   };
 };

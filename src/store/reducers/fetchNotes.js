@@ -27,11 +27,11 @@ const fetchNotesFail = (state, action) => {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.FETCHNOTES_START:
+    case actionTypes.FETCH_NOTES_START:
       return fetchNotesStart(state, action);
-    case actionTypes.FETCHNOTES_SUCCESS:
+    case actionTypes.FETCH_NOTES_SUCCESS:
       return fetchNotesSuccess(state, action);
-    case actionTypes.FETCHNOTES_FAIL:
+    case actionTypes.FETCH_NOTES_FAIL:
       return fetchNotesFail(state, action);
     default:
       return state;

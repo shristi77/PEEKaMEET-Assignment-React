@@ -5,17 +5,18 @@ const initialState = {
   error: null,
 };
 
-const addNotesStart = (state, action) => {
+const deleteNotesStart = (state, action) => {
   return updateObject(state, { error: null });
 };
 
-const addNotesSuccess = (state, action) => {
+const deleteNotesSuccess = (state, action) => {
   return updateObject(state, {
     error: null,
+    // notes: action.notes,
   });
 };
 
-const addNotesFail = (state, action) => {
+const deleteNotesFail = (state, action) => {
   return updateObject(state, {
     error: action.error,
   });
@@ -23,12 +24,12 @@ const addNotesFail = (state, action) => {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case actionTypes.ADD_NOTES_START:
-      return addNotesStart(state, action);
-    case actionTypes.ADD_NOTES_SUCCESS:
-      return addNotesSuccess(state, action);
-    case actionTypes.ADD_NOTES_FAIL:
-      return addNotesFail(state, action);
+    case actionTypes.DELETE_NOTES_START:
+      return deleteNotesStart(state, action);
+    case actionTypes.DELETE_NOTES_SUCCESS:
+      return deleteNotesSuccess(state, action);
+    case actionTypes.DELETE_NOTES_FAIL:
+      return deleteNotesFail(state, action);
     default:
       return state;
   }
