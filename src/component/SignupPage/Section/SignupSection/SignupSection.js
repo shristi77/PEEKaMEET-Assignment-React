@@ -18,7 +18,7 @@ const SignupSection = (props) => {
     console.log(email + "  " + password);
     props.onAuth(email, password);
     // return <Redirect to="/userProfile" />
-    history.push("/userProfile/details");
+    history.push("/userProfile");
   };
 
   let errorMessage = null;

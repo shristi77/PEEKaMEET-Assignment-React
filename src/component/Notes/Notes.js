@@ -36,9 +36,11 @@ const Notes = (props) => {
 
   return (
     <div>
-      <NavLink className={classes.nav} to="/userProfile/notes/add_notes">
-        Add Notes
-      </NavLink>
+      <div className={classes.container}>
+        <NavLink className={classes.nav} to="/userProfile/notes/add_notes">
+          Add Notes
+        </NavLink>
+      </div>
       <div className={classes.Note} onScroll={handleScroll}>
         {note}
       </div>

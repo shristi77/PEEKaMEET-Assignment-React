@@ -1,20 +1,16 @@
-.nav {
-  position: absolute;
+.container {
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  left: 0;
-  right: 0;
-  top: 361px;
+  margin: 20px auto 20px auto;
+}
+
+.nav {
   color: #14b349;
   font-weight: bolder;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 30px;
 }
 .Note {
-  top: 400px;
-  position: absolute;
   overflow: scroll;
   height: 620px;
-  border: 1px solid red;
+  border: 1px solid blue;
 }
