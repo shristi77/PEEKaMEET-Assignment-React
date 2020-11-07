@@ -30,7 +30,7 @@ const SideNavbar = (props) => {
           </button>
         </div>
       </div>
-      <div style={{ padding: "20px" }}>
+      <div className={classes.button}>
         <button onClick={clickHandler}>...</button>
       </div>
     </div>

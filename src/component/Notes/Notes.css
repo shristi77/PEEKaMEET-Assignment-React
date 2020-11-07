@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  margin: 20px auto 20px auto;
+  margin: 25px auto 15px auto;
 }
 
 .nav {
@@ -11,6 +11,6 @@
 }
 .Note {
   overflow: scroll;
-  height: 620px;
-  border: 1px solid blue;
+  height: 700px;
+  /* border: 1px solid blue; */
 }

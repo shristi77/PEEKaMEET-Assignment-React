@@ -1,13 +1,14 @@
 .Note {
   border: 1px solid black;
-  border-left: 5px solid #14b349;
+  border-left: 6px solid #14b349;
   border-radius: 12px;
-  margin-left: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .outerDiv {
   display: flex;
   width: 288px;
-  /* justify-content: space-around; */
 }
 .one {
   margin: 10px;
