@@ -64,8 +64,8 @@ textarea {
   border-left: none;
   border-right: none;
   border-color: grey;
-  margin-left: 16px;
-  margin-top: 15px;
+  /* margin-left: 16px;
+  margin-top: 15px; */
 }
 button {
   border: none;
