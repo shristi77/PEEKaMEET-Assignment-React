@@ -10,10 +10,6 @@ const button = (props) => {
     );
   }
 
-  if (props.btnType === "userProfile1" || props.btnType === "userProfile2") {
-    cssClasses = [classes.userProfile, classes[props.btnType]].join(" ");
-  }
-
   return (
     <button
       disabled={props.disabled}

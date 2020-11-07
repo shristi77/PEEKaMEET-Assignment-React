@@ -27,7 +27,7 @@
   width: 87px;
   height: 30px;
 }
-.userProfile {
+.Medium {
   width: 135px;
   height: 30px;
   border-radius: 4px;
@@ -36,13 +36,7 @@
     rgb(20, 179, 73),
     rgb(9, 160, 79)
   );
-  top: 271px;
-  position: absolute;
+  color: white;
   border-style: none;
-}
-.userProfile1 {
-  left: 17px;
-}
-.userProfile2 {
-  left: 168px;
+  margin: 8px;
 }

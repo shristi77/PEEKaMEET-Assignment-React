@@ -49,9 +49,7 @@ const Note = (props) => {
     errorMessage = <p>{props.error.message}</p>;
   }
 
-  // const text = props.noteText;
   const editHandler = () => {
-    // AddNotes(date, time, props.noteText);
     console.log("@@noteText ", props.noteText);
 
     history.push(
@@ -62,8 +60,6 @@ const Note = (props) => {
   const deleteHandler = () => {
     console.log("DeleteHandler Running");
     history.push(`/userProfile/notes/delete_notes/${props.id}`);
-
-    // props.onDeleteNotes(props.id);
   };
 
   return (

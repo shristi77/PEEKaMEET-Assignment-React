@@ -2,11 +2,11 @@
   background-color: white;
   /* border: solid 2px red; */
   height: 1178px;
-  /* position: relative; */
 }
 .disc {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  height: 125px;
+  border: 2px solid black;
 }
 .green {
   height: 92px;
@@ -17,73 +17,60 @@
   width: 100px;
   height: 100px;
   border: 1px solid black;
-  /* top: 24px; */
-  /* left: 110px; */
-  /* position: absolute; */
-  /* display: flex;
-  flex-flow: column;
-  align-items: center; */
+  top: 24px;
+  left: 110px;
+  position: absolute;
+  margin: 0px 0px 8px 0px;
+}
+.common {
+  text-align: center;
   font-family: DMSans;
   font-weight: bolder;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: rgba(72, 61, 139, 0.18);
-}
-.center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  position: absolute;
+  color: #152d4e;
 }
 .name {
-  top: 140px;
   font-size: 18px;
+  margin: 8px 0px 8px 0px;
 }
 .jobTitle {
-  top: 168px;
   font-size: 16px;
+  margin: 8px 0px 8px 0px;
 }
 .company {
-  top: 200px;
   font-size: 14px;
+  margin: 8px 0px 8px 0px;
+}
+.playButton {
+  text-align: center;
+  margin: 8px 0px 8px 0px;
 }
 .navLink {
-  top: 325px;
-  position: absolute;
+  margin-left: 10px;
+  margin-right: 20px;
+  font-family: DMSans;
+  font-size: 20px;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 0px 0px 0px 17px;
 }
 .nav1 {
-  left: 10px;
-  margin-left: 10px;
-  margin-right: 20px;
   text-decoration: none;
-  font-family: DMSans;
-  font-weight: bolder;
-  font-size: 20px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: black;
+  margin-right: 15px;
 }
 .nav2 {
-  left: 40px;
-  margin-left: 10px;
-  margin-right: 20px;
   text-decoration: none;
-  font-family: DMSans;
-  font-size: 20px;
-  font-weight: bolder;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: black;
+  margin-left: 15px;
 }
-.greentext {
+/* .greentext {
   color: #14b349;
   font-size: 30px;
   font-weight: bolder;
@@ -125,7 +112,7 @@
   position: absolute;
   top: 515px;
   margin-left: 16px;
-  /* margin-bottom:12px; */
+  margin-bottom:12px;
 }
 .head2 {
   text-align: left;
@@ -182,4 +169,4 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-}
+} */
