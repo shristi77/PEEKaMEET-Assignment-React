@@ -35,7 +35,6 @@ const Section = (props) => {
             Build and manage your network with PEEKaMEET
           </p>
           <SignupSection />
-          {/* <input type="checkbox">Remember me</input> */}
         </div>
       </section>
     </div>

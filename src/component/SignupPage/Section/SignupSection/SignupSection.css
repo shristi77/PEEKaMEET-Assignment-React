@@ -1,62 +1,66 @@
-.checkbox{
-    width: 14px;
-    height: 14px;
-    margin:0px 11px 0px 0px;
+.checkbox {
+  width: 14px;
+  height: 14px;
+  margin: 0px 11px 0px 0px;
+  border-radius: 10px;
 }
-.div{
-    margin-top: 20px;
-    /* margin-right: 11px; */
+.div {
+  margin-top: 20px;
+  /* margin-right: 11px; */
 }
-.remember{
-    height: 18px;
-    opacity: 0.7;
-    font-family: DMSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--dark-slate-blue);
+.remember {
+  height: 18px;
+  opacity: 0.7;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--dark-slate-blue);
 }
-.forgot{
-    margin-left:200px;
-    height: 18px;
-    opacity: 0.7;
-    font-family: DMSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: right;
-    color: rgb(0, 0, 0);
-  }
+.forgot {
+  margin-left: 200px;
+  height: 18px;
+  opacity: 0.7;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}
 
-.div2{
-      text-align: center;
-      margin: 24px 0px 24px 0px;
-        height: 18px;
-        font-family: DMSans;
-        font-size: 16px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-        color: rgb(0, 0, 0);
-  }
+.div2 {
+  text-align: center;
+  margin: 24px 0px 24px 0px;
+  height: 18px;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(0, 0, 0);
+}
 
-.div2 a{
-    width: 51px;
-    height: 18px;
-    font-family: DMSans;
-    font-size: 16px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--dark-slate-blue);
+.div2 a {
+  width: 51px;
+  height: 18px;
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--dark-slate-blue);
+}
+.button {
+  margin-top: 16px;
 }
