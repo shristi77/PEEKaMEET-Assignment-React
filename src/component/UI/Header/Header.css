@@ -26,3 +26,21 @@
   padding: 13px 0px 13px 0px;
   box-sizing: border-box;
 }
+.userprofileHeader {
+  display: flex;
+  height: 48px;
+}
+.userprofileHeader .logo {
+  margin: 4px 14px 4px 25px;
+}
+.Img {
+  width: 18px;
+  height: 18px;
+  margin: 15px;
+}
+.createImg {
+  width: 18px;
+  height: 18px;
+  margin: 15px;
+  background-color: white;
+}

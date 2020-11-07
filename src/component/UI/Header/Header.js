@@ -1,8 +1,11 @@
 import React from "react";
 import classes from "./Header.css";
 import Button from "../Button/Button";
-import Image from "../Image/Image";
 import { NavLink } from "react-router-dom";
+import add from "../../../assests/MobileHeaderLogo/add/add.png";
+import group from "../../../assests/MobileHeaderLogo/group/group-copy.png";
+import menuline from "../../../assests/MobileHeaderLogo/menuline/menu-line.png";
+import share from "../../../assests/MobileHeaderLogo/share/share-24-px.png";
 
 const Header = (props) => {
   let isactive = true;
@@ -21,8 +24,21 @@ const Header = (props) => {
   if (props.type === "userProfile") {
     header = (
       <nav className={classes.userprofileHeader}>
-        <Image type="userProfileHeader" />
-        <button className={classes.myProfile}></button>
+        <div className={classes.logo}></div>
+        <div className={classes.Img}>
+          <img src={add} alt={add}></img>
+        </div>
+        <div className={classes.Img}>
+          <img src={share} alt={share}></img>
+        </div>
+        <div className={classes.createImg}></div>
+        <div className={classes.Img}>
+          <img src={group} alt={group}></img>
+        </div>
+        <div className={classes.Img}>
+          <img src={menuline} alt={menuline}></img>
+        </div>
+        {/* <button className={classes.myProfile}></button> */}
       </nav>
     );
   }

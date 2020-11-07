@@ -8,7 +8,7 @@ const UserProfile = (props) => {
   // console.log(props);
   return (
     <div className={classes.UserProfile}>
-      <Header />
+      <Header type="userProfile" />
       <Profile />
       <Footer />
     </div>
