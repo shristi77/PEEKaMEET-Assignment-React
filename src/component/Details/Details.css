@@ -1,109 +1,49 @@
-.greentext{
-    color: #14b349;
-    font-size: 30px;
-    font-weight: bolder;
+.greentext {
+  color: #14b349;
+  font-size: 30px;
+  font-weight: bolder;
 }
-.greentext2{
-    color: #14b349;
-    font-size: 16px;
-    font-weight: bolder;
+.greentext2 {
+  color: #14b349;
+  font-size: 16px;
+  font-weight: bolder;
 }
-.tagline{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    font-size: 25px;
-    top:360px;
-    position: absolute;
+.tagline {
+  text-align: center;
+  font-size: 25px;
+  margin: 25px 15px 15px 15px;
 }
-.about{
-    top: 395px;
-    font-size: 14px;
-    left:16px;
-    right:16px;
-    text-align: justify;
+.about {
+  font-size: 14px;
+  text-align: justify;
+  margin: 0px 17px 0px 17px;
 }
-.headings{
-    font-family: DMSans;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: rgb(158, 160, 163);
+.headings {
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: rgb(137, 139, 141);
 }
- .head1{
-    text-align: left;
-    position: absolute;
-    top:515px;
-    margin-left:16px;
-    /* margin-bottom:12px; */
+.head {
+  text-align: left;
+  margin: 20px 17px 0px 16px;
 }
- .head2{
-    text-align: left;
-    position: absolute;
-    top:582px;
-    margin-left:16px;
+
+.info {
+  margin: 20px 17px 5px 16px;
+  word-break: break-all;
 }
-.head3{
-    text-align: left;
-    position: absolute;
-    top:652px;
-    margin-left:16px;
-}
-.head4{
-    text-align: left;
-    position: absolute;
-    top:722px;
-    margin-left:16px;
-}
-.head5{
-    text-align: left;
-    position: absolute;
-    top:789px;
-    margin-left:16px;
-} 
-.info1{
-    top: 882px;
-    margin-left: 16px;
-    position: absolute;
-}
-.info2{
-    top: 921px;
-    margin-left: 16px;
-    position: absolute;
-    word-wrap: normal;
-    margin-right: 16px;
-}
-.info3{
-    top: 972px;
-    margin-left: 16px;
-    position: absolute;
-}
-.head6{
-    text-align: left;
-    position: absolute;
-    top:992px;
-    margin-left:16px; 
-}
-.address{
-    font-family: DMSans;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  
-}
-.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    position: absolute;
+
+.address {
+  font-family: DMSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }

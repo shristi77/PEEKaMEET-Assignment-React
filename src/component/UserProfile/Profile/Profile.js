@@ -23,7 +23,7 @@ const Profile = (props) => {
         <div className={classes.green}></div>
         <div className={classes.profilepic}></div>
       </div>
-      <div style={{ border: "2px solid black" }}>
+      <div>
         <div className={[classes.common, classes.name].join(" ")}>{name}</div>
         <div className={[classes.common, classes.jobTitle].join(" ")}>
           {jobTitle}

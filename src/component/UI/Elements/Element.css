@@ -11,6 +11,7 @@
   line-height: normal;
   letter-spacing: normal;
   margin-right: 5px;
+  display: inline;
 }
 .Orange {
   background-color: rgba(255, 165, 0, 0.18);
