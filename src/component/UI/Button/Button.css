@@ -1,19 +1,23 @@
 .Button {
   border-radius: 4px;
-  background-color: #14b349;
+  background-color: white;
   cursor: pointer;
   font: inherit;
   font-weight: bold;
   border-style: none;
-  color: white;
+  color: #14b349;
   border-radius: 4px;
 }
-/* 
-.active,
-.Button:hover {
-  background-color: white;
-  color: #14b349;
-} */
+
+.active {
+  border: none;
+  background-image: linear-gradient(
+    92deg,
+    rgb(20, 179, 73) -109%,
+    rgb(9, 160, 79) 209%
+  );
+  color: white;
+}
 
 .Big {
   width: 431px;

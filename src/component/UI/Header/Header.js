@@ -5,17 +5,16 @@ import Image from "../Image/Image";
 import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
+  let isactive = true;
   let header = (
-    <nav className={classes.SignupHeader}>
-      <span className={classes.logo}></span>
-      <span className={classes.peekameet}>PEEKaMEET</span>
-      <div className={classes.button}>
-        <Button className={classes.button} btnType="Small">
+    <nav className={classes.Header}>
+      <div className={classes.logo}></div>
+      <div className={classes.logoText}>PEEKaMEET</div>
+      <div className={classes.Button}>
+        <Button btnType="Small" isactive>
           Sign In
         </Button>
-        <Button className={classes.button} btnType="Small">
-          Sign Up
-        </Button>
+        <Button btnType="Small">Sign Up</Button>
       </div>
     </nav>
   );
