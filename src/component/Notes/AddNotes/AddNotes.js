@@ -4,24 +4,45 @@ import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import { connect } from "react-redux";
 import * as actions from "../../../store/actions/index";
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const AddNotes = (props) => {
   console.log(props);
   let dateval = "";
   let timeval = "";
   let textval = "";
+  let id = "";
+  const history = useHistory();
+  // console.log(23344, props.notes);
 
   const name =
     localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
 
-  if (
-    props.match.path ===
-    "/userProfile/notes/edit_notes/:id/:date/:time/:noteText"
-  ) {
-    dateval = props.match.params.date;
-    timeval = props.match.params.time;
-    textval = props.match.params.noteText;
+  if (props.match.path === "/userProfile/notes/edit/:id") {
+    id = props.match.params.id;
+    for (let note of props.notes) {
+      if (note.id === id) {
+        textval = note.noteText;
+        const DateTime = new Date(note.dateTime);
+        let dateval =
+          DateTime.getFullYear() +
+          "-" +
+          (DateTime.getMonth() + 1) +
+          "-" +
+          DateTime.getDate();
+
+        console.log("Date ---", dateval);
+
+        timeval =
+          DateTime.getHours() +
+          ":" +
+          DateTime.getMinutes() +
+          ":" +
+          DateTime.getSeconds();
+
+        console.log("Time-----", timeval);
+      }
+    }
   }
 
   const [date, setDate] = useState(dateval);
@@ -32,11 +53,9 @@ const AddNotes = (props) => {
     event.preventDefault();
     const createdFor = localStorage.getItem("id");
     const timestamp = Date.parse(date + " " + time);
-    if (
-      props.match.path ===
-      "/userProfile/notes/edit_notes/:id/:date/:time/:noteText"
-    ) {
+    if (props.match.path === "/userProfile/notes/edit/:id") {
       props.onEditNotes(props.match.params.id, text, timestamp);
+      history.push("/userProfile/notes");
     } else {
       props.onAddNotes(createdFor, text, timestamp);
     }
@@ -45,13 +64,18 @@ const AddNotes = (props) => {
   let AdderrorMessage = null;
 
   if (props.addError) {
-    AdderrorMessage = <p>{props.error.message}</p>;
+    AdderrorMessage = <p>{props.addError.message}</p>;
   }
   let EditerrorMessage = null;
 
   if (props.editError) {
-    EditerrorMessage = <p>{props.error.message}</p>;
+    EditerrorMessage = <p>{props.editError.message}</p>;
   }
+
+  const cancelHandler = (event) => {
+    event.preventDefault();
+    history.push("/userProfile/notes");
+  };
   return (
     <div className={classes.container}>
       <Header type="addNotes" />
@@ -67,7 +91,9 @@ const AddNotes = (props) => {
           <div>
             {AdderrorMessage}
             {EditerrorMessage}
-            <form onSubmit={submitHandler}>
+            <form
+            // onSubmit={submitHandler}
+            >
               <div>
                 <label className={classes.headings}>Follow Up Date</label>
                 <input
@@ -100,11 +126,15 @@ const AddNotes = (props) => {
                   }}
                 />
               </div>
-              <div>
-                <button className={classes.whiteButton} type="reset">
+              <div style={{ marginBottom: "200px" }}>
+                <button className={classes.whiteButton} onClick={cancelHandler}>
                   Cancel
                 </button>
-                <button className={classes.greenButton} type="submit">
+                <button
+                  className={classes.greenButton}
+                  type="submit"
+                  onClick={submitHandler}
+                >
                   Save
                 </button>
               </div>
@@ -121,6 +151,7 @@ const mapStateToProps = (state) => {
   return {
     addError: state.addNotes.error,
     editError: state.editNotes.error,
+    notes: state.fetchNotes.notes,
   };
 };
 

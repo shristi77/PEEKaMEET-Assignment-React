@@ -10,7 +10,7 @@
   font-size: 30px;
 }
 .Note {
-  overflow: scroll;
+  overflow: auto;
   height: 700px;
   /* border: 1px solid blue; */
 }

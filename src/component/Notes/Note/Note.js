@@ -3,44 +3,24 @@ import classes from "./Note.css";
 import SideNavbar from "../../SideNavbar/SideNavbar";
 import * as actions from "../../../store/actions/index";
 import { connect } from "react-redux";
-// import AddNotes from "../AddNotes/AddNotes";
 import { useHistory } from "react-router-dom";
 
 const Note = (props) => {
   let dateAndTime = "";
-  let date = "";
-  let time = "";
+
   const history = useHistory();
 
   if (typeof props.dateTime !== "undefined") {
-    const formattedDateTime = new Date(props.dateTime);
+    const DateTime = new Date(props.dateTime);
 
     dateAndTime =
-      formattedDateTime.getHours() +
+      DateTime.getHours() +
       ":" +
-      formattedDateTime.getMinutes() +
+      DateTime.getMinutes() +
       ":" +
-      formattedDateTime.getSeconds() +
+      DateTime.getSeconds() +
       "  " +
-      formattedDateTime.toDateString();
-
-    date =
-      formattedDateTime.getFullYear() +
-      "-" +
-      (formattedDateTime.getMonth() + 1) +
-      "-" +
-      formattedDateTime.getDate();
-
-    console.log("Date ---", date);
-
-    time =
-      formattedDateTime.getHours() +
-      ":" +
-      formattedDateTime.getMinutes() +
-      ":" +
-      formattedDateTime.getSeconds();
-
-    console.log("Time-----", time);
+      DateTime.toDateString();
   }
 
   let errorMessage = null;
@@ -50,16 +30,12 @@ const Note = (props) => {
   }
 
   const editHandler = () => {
-    console.log("@@noteText ", props.noteText);
-
-    history.push(
-      `/userProfile/notes/edit_notes/${props.id}/${date}/${time}/${props.noteText}`
-    );
+    history.push(`/userProfile/notes/edit/${props.id}`);
   };
 
   const deleteHandler = () => {
-    console.log("DeleteHandler Running");
-    history.push(`/userProfile/notes/delete_notes/${props.id}`);
+    props.onDeleteNotes(props.id);
+    props.onfetchNotes();
   };
 
   return (
@@ -81,14 +57,18 @@ const Note = (props) => {
 const mapStateToProps = (state) => {
   return {
     deleteError: state.deleteNotes.error,
-    // editError: state.editNotes.error,
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onDeleteNotes: () => dispatch(actions.deleteNotes()),
-  };
+// const mapDispatchToProps = (dispatch) => {
+//   return {{ f}
+//     onDeleteNotes: (id) => dispatch(actions.deleteNotes(id)),
+//   };
+// };
+
+const mapDispatchToProps = {
+  onDeleteNotes: actions.deleteNotes,
+  onfetchNotes: actions.fetchNotes,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Note);

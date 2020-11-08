@@ -1,8 +1,8 @@
 import React from "react";
 import classes from "./Section.css";
-import Image from "../../UI/Image/Image";
 import SignupSection from "./SignupSection/SignupSection";
 import Element from "../../UI/Elements/Element";
+import backgroundImg from "../../../assests/SignUpPageSectionImages/signup.png";
 
 const Section = (props) => {
   const rectangles = [
@@ -17,7 +17,7 @@ const Section = (props) => {
     <div>
       <section className={classes.Section}>
         <div>
-          <Image type="signupHeader" />
+          <img src={backgroundImg} alt="backgroundImg"></img>
         </div>
         <div className={classes.section2}>
           <p className={classes.para1}>

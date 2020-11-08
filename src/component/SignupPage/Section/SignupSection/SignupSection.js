@@ -8,16 +8,13 @@ import classes from "./SignupSection.css";
 import { useHistory } from "react-router-dom";
 
 const SignupSection = (props) => {
-  let isactive = true;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log(email + "  " + password);
     props.onAuth(email, password);
-    // return <Redirect to="/userProfile" />
     history.push("/userProfile");
   };
 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./Notes.css";
 import { NavLink } from "react-router-dom";
-// import AddNotes from "./AddNotes/AddNotes";
 import Note from "./Note/Note";
 import { connect } from "react-redux";
 import * as actions from "../../store/actions/index";
@@ -37,7 +36,7 @@ const Notes = (props) => {
   return (
     <div>
       <div className={classes.container}>
-        <NavLink className={classes.nav} to="/userProfile/notes/add_notes">
+        <NavLink className={classes.nav} to="/userProfile/notes/add-notes">
           Add Notes
         </NavLink>
       </div>
@@ -55,10 +54,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    onfetchNotes: () => dispatch(actions.fetchNotes()),
-  };
+const mapDispatchToProps = {
+  onfetchNotes: actions.fetchNotes,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Notes);

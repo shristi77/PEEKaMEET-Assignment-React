@@ -1,6 +1,7 @@
 .Profile {
   background-color: white;
-  height: 1178px;
+  /* height: 568px; */
+  /* overflow: auto; */
 }
 .disc {
   position: relative;

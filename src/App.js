@@ -1,28 +1,46 @@
 import React, { Component } from "react";
-// import classes from './App.css';
 import SignupPage from "./component/SignupPage/SignupPage";
 import UserProfile from "./component/UserProfile/UserProfile";
 import { Redirect, Route, Switch } from "react-router-dom";
-// import Details from "./component/Details/Details";
-// import Notes from "./component/Notes/Notes";
 import AddNotes from "./component/Notes/AddNotes/AddNotes";
-// import EditNotes from "./component/Notes/EditNotes/EditNotes";
+import { connect } from "react-redux";
 
 class App extends Component {
   render() {
-    return (
+    let routes = (
       <Switch>
-        <Route
-          path="/userProfile/notes/edit_notes/:id/:date/:time/:noteText"
-          component={AddNotes}
-        />
-        <Route path="/userProfile/notes/add_notes" component={AddNotes} />
-        <Route path="/userProfile" component={UserProfile} />
         <Route path="/signup" component={SignupPage} />
-        <Redirect to="/signup" />
+        <Route path="/" component={SignupPage} />
+        <Redirect to="/" />
       </Switch>
     );
+
+    if (this.props.isAuthenticated) {
+      routes = (
+        <Switch>
+          <Route
+            path="/userProfile/notes/edit/:id"
+            exact
+            component={AddNotes}
+          />
+          <Route
+            path="/userProfile/notes/add-notes"
+            exact
+            component={AddNotes}
+          />
+          <Route path="/userProfile" component={UserProfile} />
+          <Redirect to="/userProfile" />
+        </Switch>
+      );
+    }
+
+    return routes;
   }
 }
+const mapStateToProps = (state) => {
+  return {
+    isAuthenticated: state.auth.isAuthenticated,
+  };
+};
 
-export default App;
+export default connect(mapStateToProps)(App);

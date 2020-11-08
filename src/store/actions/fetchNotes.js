@@ -8,7 +8,6 @@ export const fetchNotesStart = () => {
 };
 
 export const fetchNotesSuccess = (note) => {
-  // console.log("---- ", note);
   return {
     type: actionTypes.FETCH_NOTES_SUCCESS,
     notes: note,
@@ -26,7 +25,6 @@ export const fetchNotes = () => {
     dispatch(fetchNotesStart());
     const token = localStorage.getItem("token");
     const createdFor = localStorage.getItem("id");
-    // console.log((skip - 1) * 10);
 
     let url = `https://apipeekameet.cloudzmall.com/peekameet/api/v1/followUpNotes`;
     axios
@@ -37,17 +35,10 @@ export const fetchNotes = () => {
         params: {
           createdFor: `${createdFor}`,
           limit: "100",
-          // skip: "20",
-          // skip: `${(skip - 1) * 10}`,
         },
       })
       .then((response) => {
-        // console.log(response);
-        // console.log(response.data.data[0].docs);
-        console.log("Data Successfully fetched");
         const note = response.data.data[0].docs;
-        console.log("note", note);
-        console.log("date", note[65].dateTime);
         dispatch(fetchNotesSuccess(note));
       })
       .catch((err) => {

@@ -33,7 +33,7 @@ const Profile = (props) => {
         </div>
       </div>
       <div className={classes.playButton}>
-        <img src={playButton} alt={playButton}></img>
+        <img src={playButton} alt="playButtonIcon"></img>
       </div>
       <div style={{ margin: "0px 9px 0px 9px" }}>
         <Button btnType="Medium">Share</Button>

@@ -1,5 +1,5 @@
 .Note {
-  border: 1px solid black;
+  border: 2px solid rgb(226, 224, 224);
   border-left: 6px solid #14b349;
   border-radius: 12px;
   margin: 10px;
@@ -8,7 +8,6 @@
 }
 .outerDiv {
   display: flex;
-  width: 288px;
 }
 .one {
   margin: 10px;

@@ -12,16 +12,16 @@ const Footer = (props) => {
         <div className={classes.logoText}>PEEKaMEET&copy;2020</div>
         <div>Follow Us: </div>
         <div className={classes.Img}>
-          <img src={instagram} alt={instagram}></img>
+          <img src={instagram} alt="instagram"></img>
         </div>
         <div className={classes.Img}>
-          <img src={youtube} alt={youtube}></img>
+          <img src={youtube} alt="youtube"></img>
         </div>
         <div className={classes.Img}>
-          <img src={facebook} alt={facebook}></img>
+          <img src={facebook} alt="facebook"></img>
         </div>
         <div className={classes.Img}>
-          <img src={twitter} alt={twitter}></img>
+          <img src={twitter} alt="twitter"></img>
         </div>
         <div className={classes.links}>FAQs</div>
         <div className={classes.links}>Terms &amp; Conditions</div>

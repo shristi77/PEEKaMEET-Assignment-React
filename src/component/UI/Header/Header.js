@@ -1,14 +1,22 @@
 import React from "react";
 import classes from "./Header.css";
 import Button from "../Button/Button";
-import { NavLink } from "react-router-dom";
 import add from "../../../assests/MobileHeaderLogo/add/add.png";
 import group from "../../../assests/MobileHeaderLogo/group/group-copy.png";
 import menuline from "../../../assests/MobileHeaderLogo/menuline/menu-line.png";
 import share from "../../../assests/MobileHeaderLogo/share/share-24-px.png";
+import { connect } from "react-redux";
+import * as actions from "../../../store/actions/index";
+import { useHistory } from "react-router-dom";
 
 const Header = (props) => {
-  let isactive = true;
+  let history = useHistory();
+
+  const Logout = () => {
+    props.logout();
+    history.push("/");
+  };
+
   let header = (
     <nav className={classes.Header}>
       <div className={classes.logo}></div>
@@ -26,19 +34,18 @@ const Header = (props) => {
       <nav className={classes.userprofileHeader}>
         <div className={classes.logo}></div>
         <div className={classes.Img}>
-          <img src={add} alt={add}></img>
+          <img src={add} alt="addIcon"></img>
         </div>
         <div className={classes.Img}>
-          <img src={share} alt={share}></img>
+          <img src={share} alt="shareIcon"></img>
         </div>
-        <div className={classes.createImg}></div>
+        <button className={classes.createImg} onClick={Logout}></button>
         <div className={classes.Img}>
-          <img src={group} alt={group}></img>
+          <img src={group} alt="groupIcon"></img>
         </div>
         <div className={classes.Img}>
-          <img src={menuline} alt={menuline}></img>
+          <img src={menuline} alt="menulineIcon"></img>
         </div>
-        {/* <button className={classes.myProfile}></button> */}
       </nav>
     );
   }
@@ -53,11 +60,15 @@ const Header = (props) => {
         <div className={classes.common}>Scan</div>
         <div className={classes.common}>The Movement</div>
         <div className={classes.common}>Notifications</div>
-        <div className={classes.createImg}></div>
+        <button className={classes.createImg} onClick={Logout}></button>
       </nav>
     );
   }
   return <div>{header}</div>;
 };
 
-export default Header;
+const mapDispatchtoProps = {
+  logout: actions.logout,
+};
+
+export default connect(null, mapDispatchtoProps)(Header);

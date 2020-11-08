@@ -1,8 +1,8 @@
 .Header {
   width: 100%;
-  height: 56px;
+  /* height: 56px; */
   display: flex;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .logo {
@@ -29,7 +29,11 @@
 }
 .userprofileHeader {
   display: flex;
-  height: 48px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(20, 179, 73),
+    rgb(9, 160, 79)
+  );
 }
 .userprofileHeader .logo {
   margin: 4px 14px 4px 25px;
@@ -47,7 +51,6 @@
 }
 .addHeader {
   width: 100%;
-  height: 56px;
   display: flex;
   padding: 16px 0px 16px 0px;
   box-sizing: border-box;
